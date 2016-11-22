@@ -16,9 +16,8 @@
     "url": "https://github.com/catalin-luntraru/redux-minimal"
   },
   "scripts": {
-    "start": "webpack-dev-server --inline --hot --history-api-fallback",
-    "build-dev": "webpack --config webpack.dev.config.js",
-    "build-prod": "webpack -p --config webpack.prod.config.js",
+    "start": "webpack --watch --config webpack.dev.config.js & node server.js",
+    "start-prod": "webpack --config webpack.prod.config.js & node server.js",
     "test": "mocha --recursive --compilers js:babel-register --require babel-polyfill --require ignore-styles",
     "test-watch": "npm test -- --watch"
   },
@@ -27,14 +26,12 @@
       "es2015",
       "react",
       "stage-3"
-    ],
-    "plugins": [
-      "react-hot-loader/babel"
     ]
   },
   "author": "Catalin Luntraru",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.14.0",
     "react": "^15.3.2",
     "react-bootstrap": "^0.30.6",
     "react-dom": "^15.3.2",
@@ -61,13 +58,12 @@
     "ignore-styles": "^5.0.1",
     "mocha": "^3.1.2",
     "node-sass": "^3.12.5",
+    "parallelshell": "^2.0.0",
     "react-addons-test-utils": "^15.3.2",
-    "react-hot-loader": "^3.0.0-beta.6",
     "redux-freeze": "^0.1.5",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.3",
-    "webpack-dev-server": "^1.16.2",
     "whatwg-fetch": "^2.0.0"
   }
 }
