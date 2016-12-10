@@ -2,7 +2,7 @@ const express = require('express');
 
 // http://expressjs.com/en/4x/api.html
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 const public_path = express.static(__dirname + '/public');
 const index_path = __dirname + '/public/index.html';
 
