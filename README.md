@@ -105,12 +105,12 @@ Here are the npm packages that redux-minimal installs:
 
 # Express branch
 
-You can use the [express branch](https://github.com/catalin-luntraru/redux-minimal/tree/express) if you want to use express instead of webpack-dev-server.
+You can use the [express branch](https://github.com/catalin-luntraru/redux-minimal/tree/express) if you want to use express instead of webpack-dev-server. There's an issue with webstorm on windows when using `&` in the run/debug scripts window. To fix it you would have to run the start script and also run `node server.js` in the terminal.
 
 
 # Change host and/or port
 
-If you don't want to use localhost on port 8080, you can change it in `package.json` and `webpack.config.js`
+If you don't want to use localhost on port 8080, you can change it in `package.json` and `webpack.config.js`.
 
 
 # Sample app
